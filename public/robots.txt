@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zozhy.com/sitemap-index.xml
