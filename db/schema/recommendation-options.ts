@@ -10,9 +10,11 @@ export const RecommendationOptions = defineTable({
 
 		sex: column.text({ enum: ['male', 'female'], optional: true }),
 
-		ageMin: column.number(),
+		ageMin: column.number({ optional: true }),
 
 		ageMax: column.number({ optional: true }),
+
+		condtions: column.json({ optional: true }),
 
 		qualifier: column.text({ enum: ['moderate_to_vigorous', 'vigorous', 'moderate'] }),
 

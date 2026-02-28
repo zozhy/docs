@@ -46,7 +46,6 @@ export default async function seedRecommendationOptions() {
 			lowerBound: 300,
 			qualifier: 'moderate',
 			recommendationId: 1,
-			upperBound: 300,
 		},
 		{
 			ageMax: 64,
@@ -54,7 +53,6 @@ export default async function seedRecommendationOptions() {
 			lowerBound: 150,
 			qualifier: 'vigorous',
 			recommendationId: 1,
-			upperBound: 150,
 		},
 
 		{
@@ -82,6 +80,26 @@ export default async function seedRecommendationOptions() {
 			lowerBound: 3,
 			qualifier: 'moderate',
 			recommendationId: 4,
+		},
+		{
+			ageMin: 65,
+			lowerBound: 300,
+			qualifier: 'moderate',
+			recommendationId: 1,
+		},
+		{
+			ageMin: 65,
+			lowerBound: 150,
+			qualifier: 'vigorous',
+			recommendationId: 1,
+		},
+
+		{
+			condtions: ['pregnancy', 'postpartum'],
+			lowerBound: 150,
+			qualifier: 'moderate',
+			recommendationId: 1,
+			sex: 'female',
 		},
 	]);
 }
