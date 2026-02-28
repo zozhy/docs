@@ -1,8 +1,6 @@
 import { column, defineTable } from 'astro:db';
 
-import { AgeBands } from './age-bands';
 import { Guidelines } from './guidelines';
-import { MeasurementTypes } from './measurement-types';
 
 export const Recommendations = defineTable({
 	columns: {
@@ -10,11 +8,12 @@ export const Recommendations = defineTable({
 
 		guidelineId: column.number({ references: () => Guidelines.columns.id }),
 
-		ageBandId: column.number({ optional: true, references: () => AgeBands.columns.id }),
+		area: column.text({ enum: ['endurance', 'strength', 'balance'] }),
 
-		measurementTypeId: column.number({ references: () => MeasurementTypes.columns.id }),
-		optionsOperator: column.text({ enum: ['and', 'or'], optional: true }),
+		operator: column.text({ enum: ['gt', 'lt'] }),
 
-		outcomes: column.json({ optional: true }),
+		unit: column.text({ enum: ['minute', 'day'] }),
+
+		period: column.text({ enum: ['day', 'week'] }),
 	},
 });
