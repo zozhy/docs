@@ -4,7 +4,7 @@ export const Guidelines = defineTable({
 	columns: {
 		id: column.number({ primaryKey: true }),
 
-		authority: column.text({ enum: ['who'] }),
+		authority: column.text({ enum: ['who', 'wcrf'] }),
 
 		title: column.text({ unique: true }),
 

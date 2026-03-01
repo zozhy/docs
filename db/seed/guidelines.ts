@@ -38,5 +38,17 @@ export default async function seedGuidelines() {
 			url: 'https://www.who.int/publications/i/item/9789241504829',
 			year: 2012,
 		},
+		{
+			authority: 'who',
+			title: 'Waist circumference and waist-hip ratio: report of a WHO expert consultation',
+			url: 'https://www.who.int/publications/i/item/9789241501491',
+			year: 2011,
+		},
+		{
+			authority: 'wcrf',
+			title: 'Recommendations and public health and policy implications',
+			url: 'https://www.wcrf.org/wp-content/uploads/2024/10/Recommendations.pdf',
+			year: 2018,
+		},
 	]);
 }

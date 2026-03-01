@@ -181,5 +181,12 @@ export default async function seedRecommendationOptions() {
 			recommendationId: 9,
 			upperBound: 3510,
 		},
+
+		{
+			lowerBound: 18.5,
+			qualifier: 'bmi',
+			recommendationId: 10,
+			upperBound: 24.9,
+		},
 	]);
 }

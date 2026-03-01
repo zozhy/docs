@@ -38,7 +38,7 @@ export default async function seedRecommendations() {
 			unit: 'kcal_percent',
 		},
 		{
-			area: 'macronutrients',
+			area: 'nutrients',
 			guidelineId: 3,
 			operator: 'gt',
 			period: 'day',
@@ -65,5 +65,12 @@ export default async function seedRecommendations() {
 			period: 'day',
 			unit: 'mg',
 		},
+		{
+			area: 'measurements',
+			guidelineId: 7,
+			operator: 'between',
+			period: 'lifetime',
+			unit: 'index',
+		}
 	]);
 }

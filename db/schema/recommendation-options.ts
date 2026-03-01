@@ -21,14 +21,19 @@ export const RecommendationOptions = defineTable({
 				'moderate_to_vigorous',
 				'vigorous',
 				'moderate',
+
+				'fruits_and_vegetables',
+
 				'total_fat',
 				'saturated_fat',
 				'trans_fat',
-				'fruits_and_vegetables',
 				'fiber',
 				'free_sugar',
+
 				'sodium',
 				'potassium',
+
+				'bmi',
 			],
 		}),
 

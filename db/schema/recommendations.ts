@@ -9,13 +9,22 @@ export const Recommendations = defineTable({
 		guidelineId: column.number({ references: () => Guidelines.columns.id }),
 
 		area: column.text({
-			enum: ['endurance', 'strength', 'balance', 'macronutrients', 'micronutrients'],
+			enum: [
+				'endurance',
+				'strength',
+				'balance',
+
+				'nutrients',
+				'macronutrients',
+				'micronutrients',
+				'measurements',
+			],
 		}),
 
-		operator: column.text({ enum: ['gt', 'lt'] }),
+		operator: column.text({ enum: ['gt', 'lt', 'between'] }),
 
-		unit: column.text({ enum: ['minute', 'day', 'kcal_percent', 'g', 'mg'] }),
+		unit: column.text({ enum: ['minute', 'day', 'kcal_percent', 'g', 'mg', 'index'] }),
 
-		period: column.text({ enum: ['day', 'week'] }),
+		period: column.text({ enum: ['day', 'week', 'lifetime'] }),
 	},
 });
