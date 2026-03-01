@@ -101,5 +101,85 @@ export default async function seedRecommendationOptions() {
 			recommendationId: 1,
 			sex: 'female',
 		},
+
+		{
+			qualifier: 'total_fat',
+			recommendationId: 5,
+			upperBound: 30,
+		},
+		{
+			qualifier: 'saturated_fat',
+			recommendationId: 5,
+			upperBound: 10,
+		},
+		{
+			qualifier: 'trans_fat',
+			recommendationId: 5,
+			upperBound: 1,
+		},
+
+		{
+			ageMax: 5,
+			ageMin: 2,
+			qualifier: 'fruits_and_vegetables',
+			recommendationId: 6,
+			upperBound: 250,
+		},
+		{
+			ageMax: 9,
+			ageMin: 6,
+			qualifier: 'fruits_and_vegetables',
+			recommendationId: 6,
+			upperBound: 350,
+		},
+		{
+			ageMin: 10,
+			qualifier: 'fruits_and_vegetables',
+			recommendationId: 6,
+			upperBound: 400,
+		},
+		{
+			ageMax: 5,
+			ageMin: 2,
+			qualifier: 'fiber',
+			recommendationId: 6,
+			upperBound: 15,
+		},
+		{
+			ageMax: 9,
+			ageMin: 6,
+			qualifier: 'fiber',
+			recommendationId: 6,
+			upperBound: 21,
+		},
+		{
+			ageMin: 10,
+			qualifier: 'fiber',
+			recommendationId: 6,
+			upperBound: 25,
+		},
+
+		{
+			qualifier: 'free_sugar',
+			recommendationId: 7,
+			upperBound: 10,
+		},
+		{
+			qualifier: 'free_sugar',
+			recommendationId: 7,
+			upperBound: 5,
+		},
+
+		{
+			qualifier: 'sodium',
+			recommendationId: 8,
+			upperBound: 2,
+		},
+
+		{
+			qualifier: 'potassium',
+			recommendationId: 9,
+			upperBound: 3510,
+		},
 	]);
 }

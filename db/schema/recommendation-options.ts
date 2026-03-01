@@ -16,7 +16,21 @@ export const RecommendationOptions = defineTable({
 
 		condtions: column.json({ optional: true }),
 
-		qualifier: column.text({ enum: ['moderate_to_vigorous', 'vigorous', 'moderate'] }),
+		qualifier: column.text({
+			enum: [
+				'moderate_to_vigorous',
+				'vigorous',
+				'moderate',
+				'total_fat',
+				'saturated_fat',
+				'trans_fat',
+				'fruits_and_vegetables',
+				'fiber',
+				'free_sugar',
+				'sodium',
+				'potassium',
+			],
+		}),
 
 		lowerBound: column.number({ optional: true }),
 

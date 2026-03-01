@@ -6,10 +6,10 @@ export const Guidelines = defineTable({
 
 		authority: column.text({ enum: ['who'] }),
 
-		title: column.text(),
+		title: column.text({ unique: true }),
 
 		year: column.number(),
 
-		url: column.text(),
+		url: column.text({ unique: true }),
 	},
 });
